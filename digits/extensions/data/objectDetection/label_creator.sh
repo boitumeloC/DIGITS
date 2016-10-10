@@ -4,6 +4,6 @@ for F in ./path to folder containing your images/*.jpeg; do
 	identify -format "%w %h" ./path to folder containing your image/$T 
    	T=${T%.jpeg}.txt  ## Removes .JPEG and adds .txt
 	identify -format "%wx%h" $T
-echo "Diamond  0 0 0 0 0 0 0 0 0 0 0 0 0 0 " >> $T
+echo "type  0 0 0 0 0 0 0 0 0 0 0 0 0 0 " >> $T
    
 done
