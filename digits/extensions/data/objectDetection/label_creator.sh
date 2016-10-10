@@ -1,7 +1,7 @@
 #!/bin/bash 
-for F in ./rough_white_diamond/*.jpeg; do
+for F in ./path to folder containing your images/*.jpeg; do
    	T=${F##*/}  ## Removes directory part. Same as $(basename "$F")
-	identify -format "%w %h" ./rough_white_diamond/$T 
+	identify -format "%w %h" ./path to folder containing your image/$T 
    	T=${T%.jpeg}.txt  ## Removes .JPEG and adds .txt
 	identify -format "%wx%h" $T
 echo "Diamond  0 0 0 0 0 0 0 0 0 0 0 0 0 0 " >> $T
